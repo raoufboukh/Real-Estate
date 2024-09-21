@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  @apply overflow-x-hidden
+}
+
+.links{
+  @apply absolute py-5 px-10 rounded-md top-10 transition-all duration-300 -right-full bg-white lg:bg-transparent lg:relative lg:p-0 lg:top-0 lg:right-0 z-30
+}
+
+.show.links{
+  @apply right-0
+}
+.slick-prev,.slick-next{
+  @apply !-top-7 !h-11 !w-[37px] !right-[40%]  !translate-x-[70%] xl:!translate-x-0 xl:!-right-[28px] shadow-xl rounded-md !bg-blue-50
+}
+
+.slick-prev{
+  @apply !left-[40%] !-translate-x-[70%] xl:!translate-x-0 xl:!left-[calc(100%-62px)]
+}
+
+.slick-prev::before,
+.slick-next::before{
+  @apply !text-blue-400 !w-full !h-full font-bold
+}
+
+.slick-next::before{
+  @apply !content-['>']
+}
+
+.slick-prev::before{
+  @apply !content-['<']
+}
+
+.slick-slide > div{
+  @apply mx-2 
+}
+
+
+.slick-list{
+  @apply pl-1
+}
